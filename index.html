@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | B.Tech IT Graduate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">👨‍💻</span>
+      <span class="logo-text">Gowtham D</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-content">
+      <p class="hero-tag reveal">👋 Hello, World!</p>
+      <h1 class="hero-title reveal">
+        I'm a <span class="highlight">Full Stack</span><br/>
+        IT Engineer
+      </h1>
+      <p class="hero-sub reveal">
+        B.Tech Information Technology — 2020 Batch<br/>
+        <span class="college">KSR Institute for Engineering and Technology</span>
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Hire Me</a>
+      </div>
+      <div class="hero-scroll reveal">
+        <span>Scroll Down</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-code reveal">
+      <div class="code-window">
+        <div class="code-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-file">portfolio.js</span>
+        </div>
+        <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-key">name</span>: <span class="c-str">"Gowtham D"</span>,
+  <span class="c-key">degree</span>: <span class="c-str">"B.Tech IT"</span>,
+  <span class="c-key">batch</span>: <span class="c-num">2020</span>,
+  <span class="c-key">college</span>: <span class="c-str">"KSR IET"</span>,
+  <span class="c-key">skills</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>,
+    <span class="c-str">"JavaScript"</span>, <span class="c-str">"Python"</span>],
+  <span class="c-key">status</span>: <span class="c-str">"Open to Work 🚀"</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap reveal-left">
+          <div class="about-avatar">
+            <div class="avatar-placeholder">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="45" r="25" fill="var(--accent)" opacity="0.3"/>
+                <ellipse cx="60" cy="100" rx="38" ry="22" fill="var(--accent)" opacity="0.2"/>
+                <circle cx="60" cy="45" r="22" fill="var(--accent)" opacity="0.6"/>
+                <ellipse cx="60" cy="97" rx="34" ry="18" fill="var(--accent)" opacity="0.4"/>
+              </svg>
+              <span class="avatar-initials">G</span>
+            </div>
+            <div class="avatar-badge">2020 Graduate</div>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <h2 class="section-title">Starting My Journey in <span class="highlight">Technology</span></h2>
+          <p>I completed my Bachelor of Technology in Information Technology from <strong>KSR Institute for Engineering and Technology</strong> in 2020. During my academic journey, I developed a strong foundation in software development, databases, and networking.</p>
+          <p>I enjoy building clean, efficient, and user-friendly digital experiences — from responsive websites to backend systems. I believe in writing code that is not just functional, but elegant.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-target="4">0</span><span>+</span>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="20">0</span><span>+</span>
+              <p>Projects Done</p>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="10">0</span><span>+</span>
+              <p>Technologies</p>
+            </div>
+          </div>
+          <div class="about-info">
+            <div class="info-item"><span class="info-label">Degree</span><span>B.Tech IT</span></div>
+            <div class="info-item"><span class="info-label">College</span><span>KSR IET</span></div>
+            <div class="info-item"><span class="info-label">Batch</span><span>2020</span></div>
+            <div class="info-item"><span class="info-label">Location</span><span>Tamil Nadu, India</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title center reveal">My <span class="highlight">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3>Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span>HTML5</span><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></div>
+            <div class="skill-item"><span>CSS3 / SCSS</span><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+            <div class="skill-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div></div>
+            <div class="skill-item"><span>React.js</span><div class="skill-bar"><div class="skill-fill" data-w="70"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>Backend</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span>Python</span><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div></div>
+            <div class="skill-item"><span>Node.js</span><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
+            <div class="skill-item"><span>PHP</span><div class="skill-bar"><div class="skill-fill" data-w="60"></div></div></div>
+            <div class="skill-item"><span>REST APIs</span><div class="skill-bar"><div class="skill-fill" data-w="72"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>Database & Tools</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span>MySQL</span><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div></div>
+            <div class="skill-item"><span>MongoDB</span><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
+            <div class="skill-item"><span>Git & GitHub</span><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div></div>
+            <div class="skill-item"><span>Linux</span><div class="skill-bar"><div class="skill-fill" data-w="70"></div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="tech-tags reveal">
+        <span class="tag">Java</span><span class="tag">C/C++</span><span class="tag">Bootstrap</span>
+        <span class="tag">Tailwind CSS</span><span class="tag">Firebase</span>
+        <span class="tag">VS Code</span><span class="tag">Figma</span><span class="tag">Postman</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-label">What I've Built</div>
+      <h2 class="section-title center reveal">Featured <span class="highlight">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <div class="project-img-bg" style="--c:#00f5a0"></div>
+            <span class="project-icon">🛒</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span></div>
+            <h3>E-Commerce Website</h3>
+            <p>A full-featured online shopping platform with product listings, cart, user authentication, and admin panel.</p>
+            <div class="project-links">
+              <a href="#" class="plink">Live Demo ↗</a>
+              <a href="#" class="plink ghost">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <div class="project-img-bg" style="--c:#7c3aed"></div>
+            <span class="project-icon">📋</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+            <h3>Task Manager App</h3>
+            <p>A CRUD-based task management app with real-time updates, priority labels, and user-specific dashboards.</p>
+            <div class="project-links">
+              <a href="#" class="plink">Live Demo ↗</a>
+              <a href="#" class="plink ghost">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <div class="project-img-bg" style="--c:#f59e0b"></div>
+            <span class="project-icon">🌤️</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>JavaScript</span><span>REST API</span><span>CSS</span></div>
+            <h3>Weather Dashboard</h3>
+            <p>Live weather app using OpenWeatherMap API with city search, 5-day forecast, and animated weather icons.</p>
+            <div class="project-links">
+              <a href="#" class="plink">Live Demo ↗</a>
+              <a href="#" class="plink ghost">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <div class="project-img-bg" style="--c:#ef4444"></div>
+            <span class="project-icon">🏥</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Python</span><span>Flask</span><span>MySQL</span></div>
+            <h3>Hospital Management System</h3>
+            <p>Final year project — patient records, appointment scheduling, doctor allocation, and billing system.</p>
+            <div class="project-links">
+              <a href="#" class="plink">Live Demo ↗</a>
+              <a href="#" class="plink ghost">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title center reveal">Let's <span class="highlight">Connect</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">I'm currently open to full-time opportunities, freelance projects, and collaborations. Feel free to reach out!</p>
+          <div class="contact-items">
+            <a href="mailto:dgowtham429@email.com" class="contact-item">
+              <span class="ci-icon">✉️</span>
+              <div><strong>Email</strong><br/>dgowtham429@email.com</div>
+            </a>
+            <a href="tel:+918668070454" class="contact-item">
+              <span class="ci-icon">📞</span>
+              <div><strong>Phone</strong><br/>+91 8668 070454</div>
+            </a>
+            <div class="contact-item">
+              <span class="ci-icon">📍</span>
+              <div><strong>Location</strong><br/>Tamil Nadu, India</div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/gowtham-d-1250ba177/?skipRedirect=true" class="social-btn" aria-label="LinkedIn">in</a>
+            <a href="https://github.com/Gowtham-frontend" class="social-btn" aria-label="GitHub">gh</a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Job Opportunity / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Hi, I'd like to discuss..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width" id="submitBtn">
+            <span id="btnText">Send Message 🚀</span>
+          </button>
+          <div class="form-success" id="formSuccess">✅ Message sent successfully! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & Built by <span class="highlight">Gowtham D</span> — B.Tech IT, KSR IET 2020</p>
+      <p class="footer-copy">© 2024 All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
